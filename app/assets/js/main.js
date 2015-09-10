@@ -1,4 +1,4 @@
-//
+/*//
 // Example 1: getElementsByTagName()
 //
 // Vanilla JS Task:
@@ -18,8 +18,8 @@ pageTitle.text = "Foundations 2 Javascript  |  Class Summary";
 // https://developer.mozilla.org/en-US/docs/Web/API/Element.setAttribute
 // https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
 //
-var picBullets = getElementById("lab-images");
-picBullets.style.cssText = ("list-style-type: none;")
+// var picBullets = document.getElementById("lab-images");
+// picBullets.style.cssText = ("list-style-type: none;")
 
 // Alternate:
 // picsUl.setAttribute("style", "list-style-type: none;");
@@ -153,28 +153,30 @@ $(document).ready(function () {
   $('#lab-images li').hide();
   $('.' + labClass).show();
   });
-});
+});*/
 
 
-var course = new Object();
-  course.level = 201;
-  course.name = "F2 Javascript";
-  course.lectures = [{ topic:"Lecture 1: Javascipt Basics"},
+var course = {
+  level: 201,
+  name: "F2 Javascript",
+  lectures: [{ topic:"Lecture 1: Javascipt Basics"},
   { topic:"Lecture 2: Intro to Node"},
   { topic:"Lecture 3: Array Methods, Functions & Scope"},
   { topic:"Lecture 4: OOP in JS & Classes/Inheritance"},
   { topic:"Lecture 5: JS in the browser & Intro to jQuery"},
   { topic:"Lecture 6: Building a server & Using Ajax"},
   { topic:"Lecture 7: Build & Deploy an App"},
-  { topic:"Lecture 8: Functional Programming with Iodash"}];
+  { topic:"Lecture 8: Functional Programming with Iodash"}],
 
-  course.labs = [
-    { topic:"Lab 1: Assertions About Zoo Animals"),
-    { topic:"Lab 1: Translating Meerkats"),
-    { topic:"Lab 1: Random Favorite Animal"),
-    { topic:"Lab 1: Hungry Lion"),
-    { topic:"Lab 2: Blob Consumption Rate"),
-    { topic:"Lab 2: Sorting Arrays"),
-    { topic:"Lab 2: Universal Translator")
-  ];
+
+  labs: [
+    { topic:"Lab 1: Assertions About Zoo Animals"},
+    { topic:"Lab 1: Translating Meerkats"},
+    { topic:"Lab 1: Random Favorite Animal"},
+    { topic:"Lab 1: Hungry Lion"},
+    { topic:"Lab 2: Blob Consumption Rate"},
+    { topic:"Lab 2: Sorting Arrays"},
+    { topic:"Lab 2: Universal Translator"}]
+
+  };
 
