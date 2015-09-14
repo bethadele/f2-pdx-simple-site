@@ -2,6 +2,9 @@ var express = require("express");
 var app = express();
 var port = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + "/app"));
+
+
 var course = {
   level: 201,
   name: "F2 Javascript",
@@ -35,4 +38,18 @@ app.get("/", function(req, res) {
   var randomIndex = Math.floor(Math.random() * course.lectures.length);
   res.json(course.lectures[randomIndex.topic]);
 
+});
+
+var jokes = [
+ { setup: "What's the difference between a guitar and a fish?",
+ punchline: "You can't tuna fish." },
+ { setup: "What do you get when you cross a cow and a duck?",
+ punchline: "Milk and quackers." },
+ { setup: "How many tickles does it take to make an octupus laugh?",
+ punchline: "Ten Tickles" }
+];
+
+app.get("/joke", function(req, res) {
+ var randomIndex = Math.floor(Math.random() * jokes.length);
+ res.json(jokes[randomIndex]);
 });
