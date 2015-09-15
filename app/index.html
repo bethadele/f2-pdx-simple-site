@@ -1,7 +1,20 @@
 <html>
   <head>
     <title>?</title>
+    <style>
+    #show_lectures{
+      background-color: #FF00FF;
+      height: 200px;
+      width: 200px;
+    }
 
+    #show_labs{
+      background-color: #FF00FF;
+      height: 200px;
+      width: 200px;
+    }
+
+    </style>
     <!-- <link rel="stylesheet" type="text/css" href="?" /> -->
   </head>
   <body>
@@ -25,18 +38,12 @@
         <span>Lab 2: Blob Consumption Rates</span>
       </li>
     </ul> -->
-    <h2> Lectures </h2>
-    <button> Get Lectures </button>
-    <div>
-    </div>
-    <h2> Labs </h2>
-    <button> Get Lectures </button>
-    <div>
-    </div>
-
-
-    <script>
-    </script>
+<h2>Lectures</h2>
+<button id="lectures">Get Lectures</button>
+<div id="show_lectures"></div>
+<h2>Labs</h2>
+<button id="labs">Get Labs</button>
+<div id="show_labs"></div>
 
     <!-- include jQuery here -->
     <script src="./assets/lib/jquery-1.11.3.min.js"></script>

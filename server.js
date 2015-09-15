@@ -34,11 +34,22 @@ app.listen(port, function() {
   console.log('server started on port ' + port);
 });
 
-app.get("/", function(req, res) {
+app.get("/lectures", function(req, res) {
   var randomIndex = Math.floor(Math.random() * course.lectures.length);
-  res.json(course.lectures[randomIndex.topic]);
+  res.json(course.lectures[randomIndex].topic);
 
 });
+
+app.get("/labs", function(req, res) {
+  var randomIndex = Math.floor(Math.random() * course.labs.length);
+  res.json(course.labs[randomIndex].topic);
+});
+
+
+
+
+
+
 
 var jokes = [
  { setup: "What's the difference between a guitar and a fish?",
@@ -53,3 +64,5 @@ app.get("/joke", function(req, res) {
  var randomIndex = Math.floor(Math.random() * jokes.length);
  res.json(jokes[randomIndex]);
 });
+
+
