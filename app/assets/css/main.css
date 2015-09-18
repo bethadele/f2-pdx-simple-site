@@ -1,0 +1,12 @@
+/* Add your CSS styling here */
+#show_lectures{
+  background-color: #FF00FF;
+  height: 200px;
+  width: 200px;
+}
+
+#show_labs{
+  background-color: #FF00FF;
+  height: 200px;
+  width: 200px;
+}
